@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+httpx
+shazamio==0.8.1
+yt-dlp[default]

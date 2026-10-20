@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tiktok-shazam-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: API_KEY
+        generateValue: true      # clave secreta; la ves en Render > Environment
+      - key: FILE_TTL_SECONDS
+        value: "600"
